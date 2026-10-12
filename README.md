@@ -1,8 +1,11 @@
 # MERN Practice Questions
 
-To practice these questions, simply run these commands.
+To practice these questions, simply run these commands
 
-For example, to test your 1-Lok_Sabha answer:
+```bash
+git clone "https://github.com/GarrettSpot/MERN-Practice-Problems.git" .
+```
+Now, to test your 1-Lok_Sabha answer:
 
 Linux/MacOS/WSL:
 ```bash
