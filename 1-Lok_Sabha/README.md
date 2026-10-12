@@ -127,8 +127,8 @@ Export the Express app at the end using:
   module.exports = app;
   ```
 Do not use external frameworks or ORMs.
-Example Workflow
-Step 1: Add two MPs ```POST /mp```
+## Example Workflow
+### Step 1: Add two MPs ```POST /mp```
 ```json
 { "name": "Rahul Gandhi", "constituency": "Wayanad" }
 ```
@@ -144,7 +144,8 @@ Response →
 ```json
 { "id": 2, "name": "Amit Shah", "constituency": "Gandhinagar" }
 ```
-Step 2: Cast votes ```POST /vote```
+---
+### Step 2: Cast votes ```POST /vote```
 ```json
 { "mpId": 1, "vote": "yes" }
 ```
@@ -161,11 +162,12 @@ Response →
 { "message": "MP has already voted" }
 ```
 ```(409 Conflict)```
-
-Step 3: View results ```GET /results``` Response →
+---
+### Step 3: View results ```GET /results``` Response →
 ```json
 { "yes": 1, "no": 0, "abstain": 0 }
 ```
+---
 Hints  
 Use ```Array.find()``` to locate MPs or existing votes.  
 Use ```Array.forEach()``` or a loop to count votes in ```/results```.  
