@@ -5,7 +5,7 @@ You are building a basic RESTful API to simulate voting in the Indian Lok Sabha.
 
 You’ll use Express.js and in-memory arrays (no database) to store MP details and vote records.
 
-Functional Requirements
+## Functional Requirements
 1. ```POST /mp``` — Add a New MP
 Description: This endpoint should allow adding a new Member of Parliament (MP).
 
@@ -16,7 +16,7 @@ Request Body:
   "constituency": "Wayanad"
 }
 ```
-Validations:
+## Validations:
 
 Both name and constituency are required.
 If either field is missing, return:
@@ -25,7 +25,7 @@ If either field is missing, return:
 ```
 with ```HTTP 400 (Bad Request)``` status.
 
-Behavior:
+## Behavior:
 
 Each MP should be assigned a unique id automatically (starting from 1, incremented for each new MP).
 The new MP should be stored in an in-memory array called mps.
@@ -47,7 +47,7 @@ Request Body:
   "vote": "yes"
 }
 ```
-Validations:
+## Validations:
 
 Both mpId and vote are required. If missing, return:
   ```json
@@ -94,7 +94,7 @@ Response ```(200 OK)```:
   "abstain": 1
 }
 ```
-Behavior:
+## Behavior:
 
 Count all votes from the votes array.
 Return the total for each category (yes, no, and abstain).
@@ -166,7 +166,7 @@ Step 3: View results ```GET /results``` Response →
 ```json
 { "yes": 1, "no": 0, "abstain": 0 }
 ```
-Hints
-Use ```Array.find()``` to locate MPs or existing votes.
-Use ```Array.forEach()``` or a loop to count votes in ```/results```.
+Hints  
+Use ```Array.find()``` to locate MPs or existing votes.  
+Use ```Array.forEach()``` or a loop to count votes in ```/results```.  
 Remember to respond with the correct HTTP status codes as per the table above.
