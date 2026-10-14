@@ -3,20 +3,13 @@
 To practice these questions, simply run these commands
 
 ```bash
-git clone "https://github.com/GarrettSpot/MERN-Practice-Problems.git" .
+git clone "https://github.com/GarrettSpot/MERN-Practice-Problems.git"
+cd MERN-Practice-Problems
 ```
 Now, to test your 1-Lok_Sabha answer:
 
-Linux/MacOS/WSL:
 ```bash
 cd "1-Lok_Sabha"
-npm install
-npm test
-```
-
-Windows Powershell:
-```powershell
-Set-Location ".\1-Lok_Sabha"
 npm install
 npm test
 ```
