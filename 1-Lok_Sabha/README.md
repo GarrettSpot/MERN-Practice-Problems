@@ -35,6 +35,7 @@ with ```HTTP 400 (Bad Request)``` status.
 
 Each MP should be assigned a unique id automatically (starting from 1, incremented for each new MP).
 The new MP should be stored in an in-memory array called mps.
+
 Successful Response (201 Created):
 
 ```json
