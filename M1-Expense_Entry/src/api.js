@@ -10,7 +10,21 @@ const createExpense = async (req, res) => {
             category,
             paymentMethod
         } = req.body;
+        
+        ALLOWED_CATEGORIES = [
+            "food",
+            "travel",
+            "shopping",
+            "bills",
+            "subscription",
+            "other"
+        ]
 
+        ALLOWED_PAYMENT_METHODS = [
+            "cash",
+            "credit_card",
+            "upi"
+        ]
 
         // STEP 1:
         // Validate title
