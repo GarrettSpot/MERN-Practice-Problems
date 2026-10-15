@@ -188,6 +188,7 @@ Response →
 ---
 
 **Step 2: Cast votes ```POST /vote```**
+
 ```json
 { "mpId": 1, "vote": "yes" }
 ```
