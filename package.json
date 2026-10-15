@@ -1,0 +1,10 @@
+{
+  "name": "mern-practice-problems",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "1-Lok_Sabha",
+    "2-Express_Pagination",
+    "M1-Expense_Entry"
+  ]
+}
